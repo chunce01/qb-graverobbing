@@ -4,7 +4,7 @@ local Headwarning = false
 local DeadBody = nil 
 local Diggin = false
 
-function loadAnimDict(dict)
+local function loadAnimDict(dict)
     while (not HasAnimDictLoaded(dict)) do
         RequestAnimDict(dict)
         Citizen.Wait(5)
