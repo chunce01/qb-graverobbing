@@ -100,7 +100,20 @@ RegisterNetEvent('qb-graverobbing:BodyTime', function(OldGrave)
         },
         distance = 3.0
     })
+    TriggerEvent("qb-graverobbing:BodyCleanup")
+end)
 
+RegisterNetEvent("qb-graverobbing:BodyCleanup", function()
+    Wait(120000)
+    Diggin = false
+    ending = false
+    rarelives = false
+    if DeadBody2 then 
+        DeleteEntity(DeadBody2)
+    end
+    if DeadBody then 
+        DeleteEntity(DeadBody)
+    end
 end)
 
 RegisterNetEvent("qb-graverobbing:SearchBody", function()
@@ -221,13 +234,9 @@ RegisterNetEvent("qb-graverobbing:ZombReset", function()
     ending = false
     rarelives = false
     if DeadBody2 then 
-        NetworkFadeOutEntity(DeadBody2,false,false)
-        Wait(1000)
         DeleteEntity(DeadBody2)
     end
     if DeadBody then 
-        NetworkFadeOutEntity(DeadBody,false,false)
-        Wait(1000)
         DeleteEntity(DeadBody)
     end
     AnimpostfxStopAll()
