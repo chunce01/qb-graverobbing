@@ -63,7 +63,7 @@ RegisterNetEvent("qb-graverobbing:shovelUse", function()
     Headwarning = false
 end)
 
-RegisterNetEvent('C-Rando:BodyTime', function(OldGrave)
+RegisterNetEvent('qb-graverobbing:BodyTime', function(OldGrave)
     Gender = math.random(1, #Config.NpcSkins)
     PedSkin = math.random(1, #Config.NpcSkins[Gender])
     model = GetHashKey(Config.NpcSkins[Gender][PedSkin])
