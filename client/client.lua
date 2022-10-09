@@ -4,6 +4,13 @@ local Headwarning = false
 local DeadBody = nil 
 local Diggin = false
 
+function loadAnimDict(dict)
+    while (not HasAnimDictLoaded(dict)) do
+        RequestAnimDict(dict)
+        Citizen.Wait(5)
+    end
+end
+
 RegisterNetEvent('qb-graverobbing:ResetGrave', function(OldGrave, state)
     Config.Graves[OldGrave].looted = state
 end)
