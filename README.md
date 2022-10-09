@@ -1,6 +1,6 @@
 ## qb-graverobbing
 
-This script allows you to rob graves for loot. You will need to decide how you want to give your players the item "shovel" to start. I have pre-configured all of the "Large" headstones in the Hill Valley Church Cemetary in Northern Los Santos for looting on a cooldown timer.
+This script allows you to rob graves for loot after 21:00 and before 06:00. You will need to decide how you want to give your players the item "shovel" to start. I have pre-configured all of the "Large" headstones in the Hill Valley Church Cemetary in Northern Los Santos for looting on a cooldown timer.
 
 This was quickly written for an event on our server, as other options were encrypted or had limited config options. I have also added a few Halloween candies with visual and ps-buff effects. The ps-buff effects can be turned off in the config if you don't want to use them.
 
