@@ -63,16 +63,18 @@ RegisterNetEvent("qb-graverobbing:shovelUse", function()
     Headwarning = false
 end)
 
-RegisterNetEvent('qb-graverobbing:BodyTime', function(OldGrave)
+RRegisterNetEvent('C-Rando:BodyTime', function(OldGrave)
     Gender = math.random(1, #Config.NpcSkins)
     PedSkin = math.random(1, #Config.NpcSkins[Gender])
     model = GetHashKey(Config.NpcSkins[Gender][PedSkin])
-    heading = GetEntityHeading(PlayerPedId())
+    local ped = PlayerPedId()
+    local PedCoords = GetEntityCoords(ped)
+    local heading = GetEntityHeading(ped)
     RequestModel(model)
     while not HasModelLoaded(model) do
         Wait(0)
     end
-    DeadBody = CreatePed(3, model, Config.Graves[OldGrave].coords.x, Config.Graves[OldGrave].coords.y, Config.Graves[OldGrave].coords.z, heading, false, true)
+    DeadBody = CreatePed(3, model, PedCoords.x, PedCoords.y, PedCoords.z - 1, heading, false, true)
     StopPedSpeaking(DeadBody, true)
     DisablePedPainAudio(DeadBody, true)
     ApplyPedDamagePack(DeadBody,"BigHitByVehicle", 0.0, 9.0)
