@@ -6,6 +6,8 @@ This was quickly written for an event on our server, as other options were encry
 
 ## Preview:
 https://streamable.com/po1r29
+Zombie:
+https://streamable.com/f4tfb5
 
 ## Credit:
 Giving credit to the QBCore team for always being open source. I have used their qb-houserobbery reset timer to prevent people from repeatedly hitting the same headstones, as well as their ped model spawning config options from the taxi job so the dead locals are not always the same. Not to mention everything else I have learned from working on the framework so far.
