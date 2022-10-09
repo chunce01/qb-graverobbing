@@ -4,9 +4,10 @@ This script allows you to rob graves for loot after 21:00 and before 06:00. You 
 
 This was quickly written for an event on our server, as other options were encrypted or had limited config options. I have also added a few Halloween candies with visual and ps-buff effects. The ps-buff effects can be turned off in the config if you don't want to use them.
 
-## Preview:
+## Preview Digging and Candy Effects:
 https://streamable.com/po1r29
-Zombie:
+
+## Zombie Preview:
 https://streamable.com/f4tfb5
 
 ## Credit:
